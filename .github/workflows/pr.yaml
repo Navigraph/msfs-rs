@@ -4,6 +4,6 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v6
       - run: |
           docker run --rm -v "$(pwd)":/external ghcr.io/flybywiresim/dev-env:latest scripts/ci.sh
